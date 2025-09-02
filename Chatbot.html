@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot PLOTWISE AI</title>
+   <link rel="stylesheet" href="css/Chatbot.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6196617ef4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <!-- Chatbot Interface -->
+    <aside class="chat-screen hide-toggle">
+
+       <!-- Chatbot header -->
+        <header class="chat-header">
+            <div class="header-section1">
+              <p>
+                PLOTWISE AI
+              </p>
+            </div>
+            <div class="header-section2">
+                <button class="close-chat-btn">
+                  <i class="fa-solid fa-xmark" style="color: #000000;"></i>
+                </button>
+            </div>
+        </header>
+
+          <!-- Chatbot Menu for Messages -->
+        <div class="message-container">
+        </div>
+
+
+        <!-- Chatbot Footer -->
+        <footer class="message-input">
+            <textarea  class='message-area' type="text" placeholder="Ecrivez votre message..."></textarea>
+         <div>
+            <button class="emoji-picker" id="emoji-start">
+             <i class="fa-regular fa-face-smile"></i>
+            </button>
+            <button class="upload-btn">
+                <i class="fa-regular fa-paper-plane"></i>
+            </button>
+         </div>
+        </footer>
+
+    </aside>
+
+   <!-- Button Toggle for Closing the Chat Interface -->
+    <div class="floating-close-btn">
+        <button>
+            <i class="fa-solid fa-comment" style="color: #ffffff;"></i>
+        </button>
+    </div>
+
+    <!-- Emoji Script for Emoji Picker -->
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+
+
+    <script src="/js/Chatbot.js"></script>
+</body>
+</html>

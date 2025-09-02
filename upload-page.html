@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Page</title>
+    <link rel="stylesheet" href="css/upload-page.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6196617ef4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <header>
+        <div class="app_logo">
+            <img src="RET/Group 27.svg" alt="Plotwise LOGO">
+        </div>
+        <div class="page-title">
+            <p>UPLOADER VOS FICHIERS ICI</p>
+        </div>
+     </header>    
+
+     <main>
+        <!-- BOX 1 -->
+        <div class=" upload-container upload-container-1 box-1" data-box="1">
+            <div class="file-title">CARTE D'IDENTITE PERSONNELLE</div>
+            <div class="upload-details">
+                Un seul fichier par boite est accepté, entrez uniquement des fichiers pdf, jpg et png
+            </div>
+            <div class="upload-box-1 upload-box">
+               <div class="icon-zone">
+                <button class="upload-icon-btn">
+                    <img src="RET/upload.svg" alt="Upload_icon">
+                    
+                </button>
+                <input type="file" name="fileinput" class="fileinput" id="fileinput1" hidden>
+               </div>
+               <div class="drag-text-zone">
+                <p>Glisser vos fichiers ici pour les uploader</p>
+            </div>
+               <div class="separator-zone">
+                <p>
+                     OU 
+                </p>
+            </div>
+               <div class="button-zone"><button class="file-explorer-btn">Explorer les fichiers</button></div>
+            </div>
+           
+        </div>
+<!--  -->
+        <!-- BOX 2 -->
+        <div class=" upload-container upload-container-2 box-2" data-box="2">
+            <div class="file-title">CARTE D'IDENTITE PERSONNELLE</div>
+            <div class="upload-details">
+                Un seul fichier par boite est accepté, entrez uniquement des fichiers pdf, jpg et png
+            </div>
+            <div class="upload-box-2 upload-box">
+               <div class="icon-zone">
+                <button class="upload-icon-btn">
+                    <img src="RET/upload.svg" alt="Upload_icon">
+                </button>
+                <input type="file" name="fileinput" class="fileinput" id="fileinput2" hidden>
+               </div>
+               <div class="drag-text-zone"><p>Glisser vos fichiers ici pour les uploader</p></div>
+               <div class="separator-zone"><p><span></span> OU <span></span></p></div>
+               <div class="button-zone"><button class="file-explorer-btn">Explorer les fichiers</button></div>
+            </div>
+            
+        </div>
+
+        <!-- BOX 3 -->
+        <div class=" upload-container upload-container-3 box-3" data-box="3">
+            <div class="file-title">CARTE D'IDENTITE PERSONNELLE</div>
+            <div class="upload-details">
+                Un seul fichier par boite est accepté, entrez uniquement des fichiers pdf, jpg et png
+            </div>
+            <div class="upload-box-3 upload-box">
+               <div class="icon-zone">
+                <button class="upload-icon-btn">
+                    <img src="RET/upload.svg" alt="Upload_icon">
+                </button>
+                <input type="file" name="fileinput"class="fileinput" id="fileinput3" hidden>
+               </div>
+               <div class="drag-text-zone"><p>Glisser vos fichiers ici pour les uploader</p></div>
+               <div class="separator-zone"><p><span></span> OU <span></span></p></div>
+               <div class="button-zone"><button class="file-explorer-btn">Explorer les fichiers</button></div>
+            </div>
+            
+        </div>
+
+        <!-- BOX 4 -->
+        <div class="upload-container upload-container-4 box-4" data-box="4">
+            <div class="file-title">CARTE D'IDENTITE PERSONNELLE</div>
+            <div class="upload-details">
+                Un seul fichier par boite est accepté, entrez uniquement des fichiers pdf, jpg et png
+            </div>
+            <div class="upload-box-4 upload-box">
+               <div class="icon-zone">
+                <button class="upload-icon-btn">
+                    <img src="RET/upload.svg" alt="Upload_icon">
+                </button>
+                <input type="file" name="fileinput" class="fileinput" id="fileinput4" hidden>
+               </div>
+               <div class="drag-text-zone"><p>Glisser vos fichiers ici pour les uploader</p></div>
+               <div class="separator-zone"><p><span></span> OU <span></span></p></div>
+               <div class="button-zone"><button class="file-explorer-btn">Explorer les fichiers</button></div>
+            </div>
+           
+        </div>
+
+        <!-- BOX 5 -->
+        <div class="upload-container upload-container-5 box-5" data-box="5">
+            <div class="file-title">CARTE D'IDENTITE PERSONNELLE</div>
+            <div class="upload-details">
+                Un seul fichier par boite est accepté, entrez uniquement des fichiers pdf, jpg et png
+            </div>
+            <div class=" upload-box upload-box-5">
+               <div class="icon-zone">
+                <button class="upload-icon-btn">
+                    <img src="RET/upload.svg" alt="Upload_icon">
+                </button>
+                <input type="file" name="fileinput" class="fileinput" id="fileinput5" hidden>
+               </div>
+               <div class="drag-text-zone"><p>Glisser vos fichiers ici pour les uploader</p></div>
+               <div class="separator-zone">
+                <p>OU</p>
+            </div>
+               <div class="button-zone"><button class="file-explorer-btn">Explorer les fichiers</button></div>
+            </div>
+            
+     </main>
+
+     <footer>
+        <button class="save_button">Save</button> 
+     </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/upload-page.js"></script>
+</body>
+</html>
