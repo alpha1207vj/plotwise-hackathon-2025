@@ -1,0 +1,245 @@
+:root {
+    --origin_blue: rgb(24,73,214);
+    --origin_white: rgb(231, 219, 219);
+    --origin_black: rgb(22, 21, 21);
+    --heading_font: 'Outfit';
+    --small_font: 'Montserrat';
+    --page_info_radius: 16px;
+    --border_color: rgb(173, 168, 168);
+    --circle_radius: 50%;
+}
+html
+{
+    height: 100%;
+}
+body
+{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+
+.registration_form
+{
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(241, 235, 235, 0.407);
+}
+.multi_step{
+    font-family: 'Outfit'
+}
+h1
+{
+    text-align: center;
+}
+h5{
+    text-align: center;
+    margin-top: -10px;
+
+}
+.multi-step_title{
+    padding: 0 2px;
+}
+.multi_step_animation
+{
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.step{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step p{
+    background-color: var(--origin_blue);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader_container_child
+{
+  background-color: rgb(215, 202, 202);
+  height: 5px;
+  width: 100%;
+  z-index: -1;
+  align-self: center;
+  border-radius: 5px;
+}
+.loader{
+  background-color: rgba(27, 67, 188, 0.805);
+  width: 0%;
+  height: inherit;
+  transition: all 0.5s ease;
+  border-radius: inherit;
+}
+.multi_step_loader_container
+ { 
+    grid-area: 1 / 1 / 2 / 4;
+    display: flex;
+    align-items: center;
+    padding: 0 17%;
+
+ }
+.step1
+{
+     grid-area: 1 / 1 / 2 / 2;
+}
+.step2
+{
+     grid-area: 1 / 2 / 2 / 3;
+}
+.step3
+{
+     grid-area: 1 / 3 / 2 / 4;
+}
+form
+{
+     width: 100%;
+     height: 50%;
+}
+.form-1
+{
+    transition: all 0.5s ease;
+    border: none;
+   
+}
+.input_field
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Montserrat';
+    margin-bottom: 190px;
+}
+.input_field .text_input
+{
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid rgb(233, 228, 228);
+    background-color: rgb(233, 228, 228);
+
+}
+.text_input::placeholder 
+{
+    color: rgb(173, 155, 155);
+    font-family: 'Montserrat';
+}
+#date_input 
+{
+    color: rgb(201,195,195);
+}
+
+.form-2
+{
+   transition: all 0.5s ease;
+   border: none;
+  
+}
+.form-2 .step_button, .form-1 .step_button
+{
+   
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.step_button button{
+    font-family: 'Outfit';
+    border-radius: 5px;
+    border: none;
+    background-color: var(--origin_blue);
+    width: 80px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+
+.form-3
+{
+    display: flex;
+    border: none;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit';
+    gap: 30px;
+}
+.form-3 p
+{
+    text-align: center;
+}
+.button_box
+{
+  
+    display: flex;
+    gap: 10px;
+}
+.button_box button
+{
+    width: 120px;
+    text-align: center;
+    font-family: 'Outfit';
+    font-weight: bold;
+    background-color: var(--origin_blue);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+   cursor: pointer;
+}
+.success_image
+{
+    width: 30%;
+    height: 30%;
+}
+.form-2, .form-3
+{
+    display: none;
+}
+@media (min-width: 700px) {
+    .registration_form
+    {
+        width: 500px;
+       border-radius: var(--page_info_radius);
+       margin-bottom: 20px;
+       margin-top: 20px;
+       height: 570px;
+       
+    }
+     .input_field
+    {
+        margin-bottom: 125px;
+    }
+}
+@media (max-width: 367px) {
+    .input_field
+    {
+        margin-bottom: 140px;
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multistep Form Plotwise </title>
+    <link rel="stylesheet" href="css/multi-step-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6196617ef4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="container">
+    <div class="animation">
+          <div class="multi_step_form">
+            <div class="step1 step">
+              <p>1</p>
+            </div>
+            <div class="step2 step">
+                <p>2</p>
+              </div>
+            <div class="step3 step">
+                <p>3</p>
+            </div>
+            <div class="loader_container">
+                <div class="loader_container_child">
+                  <div class="loader"></div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <form action="">
+       
+        <fieldset class="form-2">
+         
+          <div class="input_field">
+            <label for="name_input">Nom</label>
+            <input type="text" id="name_input" name="name" class="text_input" placeholder="KOUASSI">
+
+             <label for="first_name_input">Prenoms</label>
+            <input type="text" id="first_name_input" name="first_name" class="text_input" placeholder="Jean">
+           
+            <label for="date_input">Date de naissance</label>
+            <input type="date" name="date_input" id="date_input" class="text_input">
+          </div>
+          <div class="step_button">
+            <button class="next_button button-2" data-box="2">Next</button>
+            <button  class="back_button button-2-1" data-box="2">Back</button>
+          </div>
+        </fieldset>
+        <fieldset class="form-3">
+            
+          <div class="input_field">
+            <label for="name_input">Nom</label>
+            <input type="text" id="name_input" name="name" class="text_input" placeholder="KOUASSI">
+
+             <label for="first_name_input">Prenoms</label>
+            <input type="text" id="first_name_input" name="first_name" class="text_input" placeholder="Jean">
+           
+            <label for="date_input">Adresse</label>
+            <input type="text" name="date_input" id="date_input" class="text_input" placeholder="Lorem ipsum">
+          </div>
+          <div class="step_button">
+            
+            <button class="next_button button-3" data-box="3" >Next</button>
+            <button  class="back_button button-3-1" data-box="3">Back</button>
+          </div>
+        </fieldset>
+    </form>
+   </div>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/multi-step-form.js"></script>
+</body>
+</html>

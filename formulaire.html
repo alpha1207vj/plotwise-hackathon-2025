@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/formulaire.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6196617ef4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Registration Form Section -->
+    <section class="registration_form">
+
+        <!-- Multi-step Progress Indicator -->
+        <div class="multi_step">
+
+            <!-- Title of the Form -->
+            <div class="multi-step_title">
+                <h1>Formulaire d’inscription</h1>
+                <h5>Veuillez remplir ce formulaire avec les informations requises</h5>
+            </div>
+
+            <!-- Step Animation / Loader -->
+            <div class="multi_step_animation">
+
+                <!-- Step 1 -->
+                <div class="step1 step">
+                    <p>1</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step2 step">
+                    <p>2</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step3 step">
+                    <p>3</p>
+                </div>
+
+                <!-- Loader Container -->
+                <div class="multi_step_loader_container">
+                    <div class="loader_container_child">
+                        <div class="loader"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Multi-step Form -->
+        <form action="POST">
+
+            <!-- ==================== STEP 1 ==================== -->
+            <fieldset class="form-1">
+
+                <!-- Input Fields -->
+                <div class="input_field">
+                    <label for="name_input">Nom</label>
+                    <input type="text" id="name_input" name="name" class="text_input" placeholder="KOUASSI" autocomplete="family_name">
+
+                    <label for="first_name_input">Prénoms</label>
+                    <input type="text" id="first_name_input" name="first_name" class="text_input" placeholder="Jean" autocomplete="given_name">
+
+                    <label for="date_input">Date de naissance</label>
+                    <input type="date" name="date_input" id="date_input" class="text_input" autocomplete="bday">
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="step_button">
+                    <button class="next_button button-1" data-box="1">Next</button>
+                </div>
+
+            </fieldset>
+
+            <!-- ==================== STEP 2 ==================== -->
+            <fieldset class="form-2">
+
+                <!-- Input Fields -->
+                <div class="input_field">
+                    <label for="name_input">Age</label>
+                    <input type="number" id="age_input" name="age" class="text_input" placeholder="KOUASSI" autocomplete="off">
+
+                    <label for="first_name_input">Numero de telephone</label>
+                    <input type="text" id="tel_input" name="number" class="text_input" placeholder="Jean" autocomplete="tel">
+
+                    <label for="date_input">Adresse</label>
+                    <input type="text" name="adress" id="address_input" class="text_input" placeholder="Lorem ipsum" autocomplete="street-address">
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="step_button">
+                    <button class="next_button button-2" data-box="2" type="submit">Submit</button>
+                    <button class="back_button button-2-1" data-box="2">Back</button>
+                </div>
+
+            </fieldset>
+
+            <!-- ==================== STEP 3 ==================== -->
+            <fieldset class="form-3">
+                <p>Merci, de verifier si vos donnees sont correctes en cas d'incertitude</p>
+                <img src="RET/slightly_smiling_face.svg" alt="Smiley_image" class="success_image">
+                <div class="button_box">
+                    <button class="next_step_button">CONTINUER</button>
+                 <button class="back_button button-3-1" data-box="3">REPRENDRE</button>
+                </div>
+            </fieldset>
+
+        </form>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/formulaire.js"></script>
+</body>
+</html>
