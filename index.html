@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing_page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6196617ef4.js" crossorigin="anonymous"></script>
+</head>
+  <body id="top">
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <div class="overlay" data-overlay></div>
+
+      <a href="#">
+        <h1 class="logo">PLOTWISE</h1>
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">Plotwise</a>
+
+          <button
+            class="nav-close-btn"
+            aria-label="Close Menu"
+            data-nav-close-btn
+          >
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-navbar-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-navbar-link>About</a>
+          </li>
+
+          
+
+          <li class="navbar-item">
+            <a href="#features" class="navbar-link" data-navbar-link
+              >Features</a
+            >
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-navbar-link>Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-navbar-link>Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="#" class="btn">
+        <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+
+        <span>Commencer ma demande</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline">
+          <i class="fa-solid fa-bars"></i>
+        </ion-icon>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-subtitle">Driven by Vision, Powered by AI</p>
+
+            <h2 class="h2 hero-title">Constituez le bon dossier foncier du premier coup avec l'IA</h2>
+
+            <p class="hero-text">
+             Démarches foncières simplifiées Fini les allers-retours aux bureaux ! Notre assistant IA vérifie vos documents et génère automatiquement votre dossier complet et conforme.
+            </p>
+
+            <button class="btn">En savoir plus</button>
+          </div>
+
+          <figure class="hero-banner">
+            <img
+              src="https://raw.githubusercontent.com/codewithsadee/desinic/master/assets/images/hero-banner.png"
+              width="694"
+              height="529"
+              loading="lazy"
+              alt="hero-banner"
+              class="w-100 banner-animation"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+          <figure class="about-banner">
+            <img
+              src="https://github.com/codewithsadee/desinic/blob/master/assets/images/about-banner.png?raw=true"
+              width="700"
+              height="532"
+              loading="lazy"
+              alt="about banner"
+              class="w-100 banner-animation"
+            />
+          </figure>
+
+          <div class="about-content">
+            <h2 class="h2 section-title underline">Pourquoi Plotwise</h2>
+
+            <p class="about-text">
+              In dictum aliquam turpis lacinia iaculis. Fusce vel malesuada
+              magna. Nulla vel maximus risus. Donec volutpat metus lacinia risus
+              accumsan, ac bibendum libero efficitur. Pellentesque nec nisi sit
+              amet magna tempus hendrerit ut a odio.
+            </p>
+
+            <p class="about-text">
+              Praesent rhoncus commodo tortor, id pulvinar nisl blandit at.
+              Nulla facilisi. Quisque turpis ante, vehicula condimentum arcu.
+            </p>
+
+            <ul class="stats-list">
+              <li class="stats-card">
+                <p class="h3 stats-title">9875</p>
+
+                <p class="stats-text">Satisfied Clients</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">7894</p>
+
+                <p class="stats-text">Project Lunched</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">65</p>
+
+                <p class="stats-text">Years Completed</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features" id="features">
+        <div class="container">
+          <h2 class="h2 section-title underline">Nos atouts</h2>
+
+          <ul class="features-list">
+            <li>
+              <div class="features-card">
+                <div class="icon">
+                  <ion-icon name="bulb-outline image">
+                    <img src="RET/bulb-2-svgrepo-com.svg" style="width: 35px; height: 35px;" alt="">
+                  </ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">Vérification IA automatique</h3>
+
+                  <p class="text">
+                    Praesent tincidunt congue est ut hendrerit. Pellentesque et
+                    eros sit amet ipsum venenatis.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+                <div class="icon">
+                  <ion-icon name="color-palette-outline">
+                   <img src="RET/folder-plus-svgrepo-com.svg" style="width: 35px; height: 35px;">
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">Génération de dossiers</h3>
+
+                  <p class="text">
+                    Praesent tincidunt congue est ut hendrerit. Pellentesque et
+                    eros sit amet ipsum venenatis.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <figure class="features-banner">
+            <img
+              src="https://raw.githubusercontent.com/codewithsadee/desinic/master/assets/images/feautres-banner.png"
+              width="369"
+              height="318"
+              loading="lazy"
+              alt="Features Banner"
+              class="w-100 banner-animation"
+            />
+          </figure>
+
+          <ul class="features-list">
+            <li>
+              <div class="features-card">
+                <div class="icon">
+                  <ion-icon name="code-slash-outline">
+                    <img src="RET/verification-svgrepo-com.svg" style="width: 35px; height: 35px;">
+                  </ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">Authentification verifiee</h3>
+
+                  <p class="text">
+                    Praesent tincidunt congue est ut hendrerit. Pellentesque et
+                    eros sit amet ipsum venenatis.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="features-card">
+                <div class="icon">
+                  <ion-icon name="rocket-outline">
+                    <img src="RET/success-svgrepo-com.svg" style="width: 35px; height: 35px;">
+                  </ion-icon>
+                </div>
+
+                <div class="content">
+                  <h3 class="h3 title">Dossier complet en un clic</h3>
+
+                  <p class="text">
+                    Praesent tincidunt congue est ut hendrerit. Pellentesque et
+                    eros sit amet ipsum venenatis.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog">
+        <div class="container">
+          <h2 class="h2 section-title underline">Notre blog et nouvelles </h2>
+
+          <ul class="blog-list">
+            <li>
+              <div class="blog-card">
+                <figure class="banner">
+                  <a href="#">
+                    <img
+                      src="https://raw.githubusercontent.com/codewithsadee/desinic/master/assets/images/blog-1.jpg"
+                      width="750"
+                      height="350"
+                      loading="lazy"
+                      alt="Vestibulum massa arcu, consectetu pellentesque scelerisque."
+                      class="img-cover"
+                    />
+                  </a>
+                </figure>
+
+                <div class="content">
+                  <h3 class="h3 title">
+                    <a href="#">
+                      Grâce à PlotWise, j’ai pu réunir tous mes documents fonciers en un seul dossier clair et bien structuré. Le suivi est beaucoup plus simple.
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut
+                    massa et, consequat laoreet erat nam ac imperdiet.
+                  </p>
+
+                  <div class="meta">
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">7 Decembre 2023</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+                <figure class="banner">
+                  <a href="#">
+                    <img
+                      src="https://raw.githubusercontent.com/codewithsadee/desinic/master/assets/images/blog-2.jpg"
+                      width="750"
+                      height="350"
+                      loading="lazy"
+                      alt="Quisque egestas iaculis felis eget placerat ut pulvinar mi."
+                      class="img-cover"
+                    />
+                  </a>
+                </figure>
+
+                <div class="content">
+                  <h3 class="h3 title">
+                    <a href="#">
+                     La plateforme m’a permis de vérifier rapidement l’authenticité des documents. Cela me fait gagner du temps dans mes démarches professionnelles.
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut
+                    massa et, consequat laoreet erat nam ac imperdiet.
+                  </p>
+
+                  <div class="meta">
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">3 Aout, 2025</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+                <figure class="banner">
+                  <a href="#">
+                    <img
+                      src="https://raw.githubusercontent.com/codewithsadee/desinic/master/assets/images/blog-3.jpg"
+                      width="750"
+                      height="350"
+                      loading="lazy"
+                      alt="Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere."
+                      class="img-cover"
+                    />
+                  </a>
+                </figure>
+
+                <div class="content">
+                  <h3 class="h3 title">
+                    <a href="#">
+                      Avec PlotWise, obtenir un dossier complet n’a jamais été aussi simple. Cela change totalement la façon dont j’investis dans l’immobilier
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut
+                    massa et, consequat laoreet erat nam ac imperdiet.
+                  </p>
+
+                  <div class="meta">
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">29 Avril, 2025</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div class="blog-card">
+                <figure class="banner">
+                  <a href="#">
+                    <img
+                      src="https://raw.githubusercontent.com/codewithsadee/desinic/master/assets/images/blog-1.jpg"
+                      width="750"
+                      height="350"
+                      loading="lazy"
+                      alt="Vestibulum massa arcu, consectetu pellentesque scelerisque."
+                      class="img-cover"
+                    />
+                  </a>
+                </figure>
+
+                <div class="content">
+                  <h3 class="h3 title">
+                    <a href="#">
+                      Grâce à PlotWise, j’ai pu réunir tous mes documents fonciers en un seul dossier clair et bien structuré. Le suivi est beaucoup plus simple.
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    Sed quis sagittis velit. Aliquam velit eros, bibendum ut
+                    massa et, consequat laoreet erat nam ac imperdiet.
+                  </p>
+
+                  <div class="meta">
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">7 Decembre 2023</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+           
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="footer-top section">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#" class="logo">Plotwise</a>
+
+          <p class="text">
+            Maecenas pellentesque placerat quam, in finibus nisl tincidunt sed.
+            Aliquam magna augue, malesuada ut feugiat eget, cursus eget felis.
+          </p>
+
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Nos liens</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">A propos</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Team</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Blog</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Our Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Titre Foncier</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Certificat de propriete</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Permis de construire</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Lorem</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Lorem</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Autres Liens</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Termes du contrat</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Termes & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Support</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Contactez nous</p>
+          </li>
+
+          <li class="footer-item">
+            <div class="footer-item-icon">
+              <ion-icon name="call"></ion-icon>
+            </div>
+
+            <div>
+              <a href="#" class="footer-item-link"
+                >+229-89-45-33-23</a
+              >
+              <a href="#" class="footer-item-link"
+                >+229-89-45-33-23</a
+              >
+            </div>
+          </li>
+
+          <li class="footer-item">
+            <div class="footer-item-icon">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+
+            <div>
+              <a href="#" class="footer-item-link"
+                >contato@plotwise.com</a
+              >
+              <a href="#" class="footer-item-link"
+                >help@plotwise.com</a
+              >
+            </div>
+          </li>
+
+          <li class="footer-item">
+            <div class="footer-item-icon">
+              <ion-icon name="location"></ion-icon>
+            </div>
+
+            <address class="footer-item-link">
+              Cotonou , Benin
+            </address>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy;Septembre 2025 <a href="#" class="copyright-link">Plotwise AI</a>. Tous 
+        Droits Reserves
+      </p>
+    </div>
+  </footer>
+
+  
+
+  
+  <script src="js/index.js"></script>
+</body>
+
+</html>
